@@ -11796,7 +11796,7 @@ void RunBotLifecycleConnect(
     std::size_t const pendingCount =
         CountBotLifecyclePendingConnects(requester);
     uint32 const maxBots =
-        uint32(PlayerbotAIConfig::Instance().maxAddedBots);
+        uint32(PlayerbotAIConfig::Instance().MaxAddedBots);
     if (mgr->GetPlayerbotsCount() + pendingCount >= maxBots)
     {
         SendBotLifecycleResultPacket(
